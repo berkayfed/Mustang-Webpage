@@ -1,0 +1,329 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:black;
+}
+a{
+    text-decoration: none;
+    color: rgb(70, 66, 66);
+}
+.flex{
+    display: flex;
+    flex-direction:row ;
+
+}
+/*Üst*/
+.top{
+    width: 16%; 
+}
+#logo{
+   justify-content:space-between;
+}
+.sağsol{
+    width: 39%;
+    opacity: 70%;
+}
+.blue{
+    margin-top: 15px;
+    width: 100%;
+    height: 18px;
+    background-color: blue;
+}
+.white{
+    width: 100%;
+    height: 26px;
+    background-color: rgb(255, 255, 255);
+}
+.red{
+    width: 100%;
+    height: 18px;
+    background-color: rgb(170, 5, 5);
+}
+#resim img{
+    width: 100%;   
+}
+#mustang{
+    width: 20%;
+}
+#mustang a{
+    font-family: Arizonia;
+    color: white;
+    font-size: 25px;
+}
+/*Navigasyon*/
+#nav{
+    background-color: rgb(20, 20, 20);
+    position: relative;
+    height: 40px;
+    display: block;
+}
+#ilkli{
+    justify-content: center;
+}
+#ilkli img{
+    width: 18%;
+    position:relative;
+    
+}
+.litwo{
+    margin-top: 10px;
+}
+.navli{
+    float: left;
+    font-size: 20px;
+    font-family: Michroma;
+    list-style-type: none;
+    width: 20%;
+    text-align: center;
+    
+}
+.navli:hover a{
+    color: white;
+    transition: color .3s linear;
+}
+
+.temiz{
+    margin-top: 10px;
+}
+#navtog{
+    display: none;
+}
+/*Orta*/
+#orta{
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    margin-top: 25px;
+}
+#sol{
+    width: 40%;
+    
+}
+#sağ{
+    width: 30%;
+    margin-right: 100px;
+}
+.text{
+    color: white;
+    font-family: Raleway;
+}
+/*Hakkında*/
+#hakkında{
+    width: 80%;
+    margin: 150px auto;
+}
+.sağtexts{
+     font-family: Arizonia;
+     color: wheat;
+     font-size: 50px;
+}
+.motor{
+    display: flex;
+    justify-content: space-around;
+    flex-direction:row-reverse;
+}
+#motorimg{
+    width: 30%;
+}
+#motorimg img{
+    width: 100%;
+}
+#motortext{
+    width: 40%;
+}
+#şase{
+    display:flex;
+    margin-top: 200px;
+    justify-content: space-between;
+}
+#şaseimg{
+    width: 45%;
+    float: left;
+}
+#şaseimg img{
+    width: 100%;
+}
+#şasetext{
+    width: 50%;
+}
+#footer{
+    display: flex;
+    background-color: rgb(43, 19, 5);
+    justify-content: center;
+}
+/*Gallery*/
+.galleri{
+    padding: 40px 60px;
+}
+
+@media only screen and (max-width: 1280px){
+    .zort{
+        width: 20%; 
+    }
+    .sağsol{
+        width: 37%;
+        opacity: 70%;
+    }
+    .navli{
+        float: left;
+        font-size: 17px;
+        font-family: Michroma;
+        list-style-type: none;
+        width: 20%;
+        text-align: center;
+        
+    }
+    #ilkli img{
+        width: 18%;
+        position:relative;
+        margin-top: 5px;
+    }
+    .text{
+        font-size: 15px;
+    }
+    #sağ{
+        margin-right: 50px;
+    }
+    #sol{
+        width: 50%;
+    }
+    #motorimg{
+        width: 40%;
+    }
+
+}
+@media only screen and (max-width: 1100px){
+    .zort{
+        width: 30%;
+    }
+    .sağsol{
+        display: none;
+    }
+    #logo{
+        justify-content:center;
+     }
+     #nav{
+         display: none;
+     }
+     #orta{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        width: 100%;
+        margin-top: 25px;
+    }
+    #sol{
+        width: 80%;
+    }
+    #sağ{
+        width: 60%;
+        margin-top: 40px;
+    }
+    #navtog{
+        display: block;
+        width: 30px;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+    #navtog img{
+        width: 100%;
+    }
+    .motor{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+    }
+    #motorimg{
+        width: 60%;
+    }
+    #motortext{
+        width: 80%;
+        margin-top: 40px;
+    }
+    #şase{
+        display:flex;
+        flex-direction: column;
+        margin-top: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+    #şaseimg{
+        width:70%;
+    }
+    #şasetext{
+        width: 80%;
+        margin-top: 40px;
+    }
+    .navli{
+        float: left;
+        font-size: 15px;
+        font-family: Michroma;
+        list-style-type: none;
+        width: 20%;
+        text-align: center;
+        
+    }
+
+    
+}
+@media only screen and (max-width: 1100px){
+    #nav{
+        height:max-content;
+        margin-top: 5px;
+    }
+    .navli{
+        float:none;
+        font-size: 16px;
+        font-family: Michroma;
+        list-style-type: none;
+        width: 100%;
+        text-align: center;
+        
+    }
+    #navul{
+        display: flex;
+        flex-direction: column;
+    }
+    #ilkli img{
+        width: 7%;
+        position:relative;
+        margin-right: 0px;
+        
+    }
+    #ilkli a{
+        margin-right: 60px;
+    }
+    #ilkli{
+        justify-content: center;
+        align-items: center;
+    }
+    .litwo{
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (max-width: 600px){
+    #ilkli img{
+        width: 12%;
+        position:relative;
+        margin-right: 0px;
+    }
+    #ilkli a{
+        margin-right: 55px;
+        letter-spacing: 2px;
+        margin-bottom: 5px;
+    }
+    .litwo{
+        margin-bottom: 10px;
+    }
+    .zort{
+        width: 40%;
+    }
+}
+
+
